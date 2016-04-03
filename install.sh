@@ -3,8 +3,8 @@
 set -e
 
 mkdir -p $HOME/.local/share
-PEARL_ROOT=$HOME/.local/share/pearl
-PEARL_HOME=$HOME/.config/pearl
+export PEARL_ROOT=$HOME/.local/share/pearl
+export PEARL_HOME=$HOME/.config/pearl
 
 [ -d "$PEARL_ROOT" ] && { echo "Error: Pearl seems already installed in $PEARL_ROOT. Remove the directory in order to proceed with the installation."; exit 1; }
 
