@@ -1,0 +1,5 @@
+# vim: ft=yaml
+language: bash
+
+script:
+    - ./travis-test.sh
