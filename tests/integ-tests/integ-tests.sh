@@ -12,3 +12,5 @@ source $HOME/.bashrc
 test -d "$PEARL_ROOT"
 test -d "$PEARL_HOME"
 test -d "$PEARL_TEMPORARY"
+
+pearl --help
