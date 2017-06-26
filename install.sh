@@ -10,5 +10,7 @@ export PEARL_HOME=$HOME/.config/pearl
 
 echo "* Downloading Pearl to $PEARL_ROOT"
 git clone --quiet 'https://github.com/pearl-core/pearl.git' $PEARL_ROOT
+cd $PEARL_ROOT
+git submodule update --quiet --init --recursive
 
 $PEARL_ROOT/bin/pearl init

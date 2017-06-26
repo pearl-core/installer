@@ -13,8 +13,5 @@ before_install:
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then ./tests/integ-tests/install-linux-deps.sh; fi;
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then ./tests/integ-tests/install-osx-deps.sh; fi;
 
-install:
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"; fi;
-
 script:
     - ./tests/integ-tests/integ-tests.sh
